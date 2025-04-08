@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameList</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>Game List</h1>
+    </div>
+
+    <div class="container">
+      <div class="game-container">
+        <h2>Free Fire Max</h2>
+        <h4>Garena</h4>
+        <p>Free Fire MAX is designed exclusively to deliver premium gameplay experience in a Battle Royale. Enjoy a variety of exciting game modes with all Free Fire players via exclusive Firelink technology. Experience combat like never before with Ultra HD resolutions and breathtaking effects.</p>
+        <button onclick="deleteGame(event)">Delete</button>
+      </div>
+      
+    </div>
+
+
+    <div class="popup-overlay"></div>
+    <div class="popup">
+      <h2>Add Game :</h2>
+      <form>
+        <input type="text" placeholder="Game Name" id="game-name">
+        <input type="text" placeholder="Game Developer" id="game-develop">
+        <textarea placeholder="Game Description" id="game-descrip"></textarea>
+        <div class="add-cancel">
+          <button id="add-game">Add</button>
+          <button id="cancel-game">Cancel</button>
+        </div>
+      </form>
+    </div>
+    
+
+    <button class="add-btn" id = "add-popup">+</button>
+
+  <script src="script.js"></script>
+  </body>
+</html>
